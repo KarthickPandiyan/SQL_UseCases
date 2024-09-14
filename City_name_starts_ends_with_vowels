@@ -1,0 +1,12 @@
+FIND of CITY names that have vowels (i.e., a, e, i, o, and u) as both their first and last characters.
+
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE
+left(city, 1) in ('A','E','I','O','U') and 
+right(city, 1) in ('A','E','I','O','U')
+ORDER BY CITY
+
+
+Issue:
+Tried to like A%A
