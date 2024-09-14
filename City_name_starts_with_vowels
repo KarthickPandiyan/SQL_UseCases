@@ -1,0 +1,18 @@
+Question: Fine city names that starts with vowels 'a','e','i','o','u' and result cannot contain duplicates
+
+Solution: 
+SELECT DISTINCT(CITY)
+FROM 
+STATION 
+WHERE 
+CITY LIKE 'A%' or
+CITY LIKE 'E%' or
+CITY LIKE 'I%' or
+CITY LIKE 'O%' or
+CITY LIKE 'U%'  
+ORDER BY CITY
+
+Issues Faced:
+Tried to give all the vowels as list of character it doesnt work
+Tried with IN key word it doesnt work
+Tried to CTE it doesnt work
